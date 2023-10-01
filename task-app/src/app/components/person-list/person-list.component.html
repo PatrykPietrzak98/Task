@@ -1,0 +1,42 @@
+<!--<div class="bg-slate-100 rounded-lg shadow-lg p-4">-->
+<!--  <h2 class="text-xl font-semibold mb-4">Tytuł Karty</h2>-->
+<!--  <ul>-->
+<!--    <li class="mb-2">-->
+<!--      <span class="font-semibold">Element 1:</span> Opis elementu 1-->
+<!--    </li>-->
+<!--    <li class="mb-2">-->
+<!--      <span class="font-semibold">Element 2:</span> Opis elementu 2-->
+<!--    </li>-->
+<!--    <li class="mb-2">-->
+<!--      <span class="font-semibold">Element 3:</span> Opis elementu 3-->
+<!--    </li>-->
+<!--  </ul>-->
+<!--</div>-->
+<table class="w-full bg-white">
+  <thead>
+  <tr>
+    <th class="px-6 py-3 border-b-2 border-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+      ID
+    </th>
+    <th class="px-6 py-3 border-b-2 border-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+      Name
+    </th>
+    <th class="px-6 py-3 border-b-2 border-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+      Year
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of persons" class="hover:bg-gray-100">
+    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+      {{ person.id }}
+    </td>
+    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+      {{ person.name }}
+    </td>
+    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+      {{ person.year }}
+    </td>
+  </tr>
+  </tbody>
+</table>

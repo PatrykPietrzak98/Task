@@ -1,0 +1,22 @@
+<table class="w-full bg-white">
+  <thead>
+  <tr>
+    <th class="px-6 py-3 border-b-2 border-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+      Name
+    </th>
+    <th class="px-6 py-3 border-b-2 border-gray-200 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+      Count
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let person of persons | keyvalue" class="hover:bg-gray-100">
+    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+      {{ person.key }}
+    </td>
+    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
+      {{ person.value }}
+    </td>
+  </tr>
+  </tbody>
+</table>

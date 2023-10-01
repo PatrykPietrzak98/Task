@@ -1,5 +1,7 @@
 task-app/node_modules/
 task-app/.vscode/
+.idea/
+task-main/target/
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/intellij

@@ -1,0 +1,20 @@
+<form class="max-w-sm mx-auto mt-8">
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2">ID:</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="ID" [(ngModel)]="id" name="id">
+  </div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Name" [(ngModel)]="name" name="name" required>
+  </div>
+
+  <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold mb-2">Birthday:</label>
+    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="Birthday (dd-MM-yyyy)" [(ngModel)]="birthday" name="birthday" pattern="\d{2}-\d{2}-\d{4}">
+  </div>
+
+  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" (click)="onClick()">
+    Submit
+  </button>
+</form>
